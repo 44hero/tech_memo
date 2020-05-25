@@ -87,6 +87,31 @@
     
     
       
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -302,8 +327,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../ご意見等はｺﾁﾗまで/" class="md-tabs__link">
-          ご意見等はｺﾁﾗまで
+        <a href="../../ご意見等はｺﾁﾗから/" class="md-tabs__link">
+          ご意見等はｺﾁﾗから
         </a>
       
     </li>
@@ -315,8 +340,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../プライベートLink/" class="md-tabs__link">
-          プライベートLink
+        <a href="../../ﾌﾟﾗｲﾍﾞｰﾄLink/" class="md-tabs__link">
+          ﾌﾟﾗｲﾍﾞｰﾄLink
         </a>
       
     </li>
@@ -1475,10 +1500,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-3" type="checkbox" id="nav-9-3">
     
     <label class="md-nav__link" for="nav-9-3">
-      Re についてあれこれ独自でまとめたんダ
+      maya cmds UI の兼ねてからの疑問 解消 
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-9-3">
+        maya cmds UI の兼ねてからの疑問 解消 
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Python/maya cmds UI の兼ねてからの疑問-解消-/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-4" type="checkbox" id="nav-9-4">
+    
+    <label class="md-nav__link" for="nav-9-4">
+      Re についてあれこれ独自でまとめたんダ
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-9-4">
         Re についてあれこれ独自でまとめたんダ
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1516,11 +1577,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
     
     <label class="md-nav__link" for="nav-10">
-      ご意見等はｺﾁﾗまで
+      ご意見等はｺﾁﾗから
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-10">
-        ご意見等はｺﾁﾗまで
+        ご意見等はｺﾁﾗから
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1531,7 +1592,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../ご意見等はｺﾁﾗまで/" title="Index" class="md-nav__link">
+    <a href="../../ご意見等はｺﾁﾗから/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1552,11 +1613,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
     <label class="md-nav__link" for="nav-11">
-      プライベートLink
+      ﾌﾟﾗｲﾍﾞｰﾄLink
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-11">
-        プライベートLink
+        ﾌﾟﾗｲﾍﾞｰﾄLink
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1567,7 +1628,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../プライベートLink/" title="Index" class="md-nav__link">
+    <a href="../../ﾌﾟﾗｲﾍﾞｰﾄLink/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
