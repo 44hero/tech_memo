@@ -34,7 +34,8 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
-/*.material-icons.orange600 { color: #FB8C00; }*/ /*オレンジ色です*/
+/* 色 attr 宣言 */
+.material-icons.orange600 { color: #FB8C00; }*/ /*オレンジ色です*/
 .material-icons.cyan { color: #00BCD4; }  /*blue色です*/
 
-<!-- 参考サイト is here.  http://google.github.io/material-design-icons/ -->
+/* 参考サイト is here.  http://google.github.io/material-design-icons/ */
