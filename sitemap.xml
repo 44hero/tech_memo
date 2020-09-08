@@ -156,17 +156,22 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://44hero.github.io/tech_memo/Pyside2/1.Mayaメインウィンドウの後ろへ行くのを回避/</loc>
+     <loc>https://44hero.github.io/tech_memo/Pyside2/single UI and parent UI/</loc>
      <lastmod>2020-09-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://44hero.github.io/tech_memo/Pyside2/2.重複したウィンドウ作成の回避/</loc>
+     <loc>https://44hero.github.io/tech_memo/Pyside2/single UI and parent UI/1.parent UI/</loc>
      <lastmod>2020-09-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://44hero.github.io/tech_memo/Pyside2/Q.重複ウィンドウの回避/</loc>
+     <loc>https://44hero.github.io/tech_memo/Pyside2/single UI and parent UI/2.single UI/</loc>
+     <lastmod>2020-09-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://44hero.github.io/tech_memo/Pyside2/single UI and parent UI/Q.重複ウィンドウの回避/</loc>
      <lastmod>2020-09-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
