@@ -2074,11 +2074,11 @@
 <code class="codehilite"><span class="err">pip install pygments</span></code></p>
 <h2 id="mkdocs-git-revision-date-localized-plugin">■mkdocs-git-revision-date-localized-plugin<a class="headerlink" href="#mkdocs-git-revision-date-localized-plugin" title="Permanent link">&para;</a></h2>
 <p>mkdocs-のgit-改訂日付局在-プラグイン<br />
-は、マークダウンファイルが最後に各ページの一番下に更新された日付が追加されます。<br />
+は、マークダウンファイルが最後に各ページの一番下に更新された日付が追加されるようになる。<br />
 <code class="codehilite"><span class="err">pip install mkdocs-git-revision-date-localized-plugin</span></code></p>
 <h2 id="mkdocs-awesome-pages-plugin">■mkdocs-awesome-pages-plugin<a class="headerlink" href="#mkdocs-awesome-pages-plugin" title="Permanent link">&para;</a></h2>
-<p>Folder以下に .pages というymlで書かれた定義を読み込んで<br />
-Folder名や、Folder以下のページの並び順を制御できるようになっている<br />
+<p>Folder以下に .pages というymlで書かれた定義を読み込んで、<br />
+Folder名や、Folder以下のページの並び順を制御できるようになる。<br />
 <code class="codehilite"><span class="err">pip install mkdocs-awesome-pages-plugin</span></code></p>
 <details class="example"><summary>実行例</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -2113,34 +2113,35 @@ Folder名や、Folder以下のページの並び順を制御できるように�
 </td></tr></table>
 
 </details>
-<p>以下のサイトにオリジナルの mkdocs-awesome-pages-plugin ドキュメントがあります。<br />
-<a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin</a>    </p>
-<p>これに加え、<br />
-次に、</p>
-<ul>
-<li>mkdocs.yml　への追記を施す。<br />
-<code class="codehilite"><span class="err">tech_memo/docs</span></code>と同階層にある、<code class="codehilite"><span class="err">mkdocs.yml</span></code> への追記<br />
-内容:<br />
+<p>オリジナルの mkdocs-awesome-pages-plugin ドキュメント<br />
+<a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin</a> </p>
+<p>更に、以下を実施する。</p>
+<details class="example"><summary>詳細</summary><ol>
+<li>
+<p>mkdocs.yml　への追記<br />
+<code class="codehilite"><span class="err">tech_memo/docs</span></code>と同階層にある、<code class="codehilite"><span class="err">mkdocs.yml</span></code> への追記を施す。<br />
+追記内容:<br />
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c">plugins:</span>
 <span class="c">    - awesome-pages</span>
 </code></pre></div>
-</td></tr></table></li>
-</ul>
-<p>次に、</p>
-<ul>
-<li>手動で .pages ファイルを作成するわずらわしさの解消、能率の良い素早いページ作成を可能のため、<br />
+</td></tr></table></p>
+</li>
+<li>
+<p>能率化用の python ファイルの作成と実行<br />
+手動で .pages ファイルを作成するわずらわしさの解消、能率の良い素早いページ作成を可能のため、<br />
 あんどう氏は、1つの<strong>素晴らしい python ファイル</strong>を作成し、能率化を図っているそうですので、<br />
 私も活用する事にします。<br />
 いつもお世話になっている、あんどう氏のサイト<br />
 <a href="https://fereria.github.io/reincarnation_tech/10_Programming/99_Documentation/01_mkdocs_autobuild/" target="_blank">awesome-pagesというプラグイン</a><br />
 を参考にさせていただきました。いつもありがとうございます。<br />
 続いて、<br />
-<code class="codehilite"><span class="err">tech_memo/docs</span></code>と同階層に、<code class="codehilite"><span class="err">create_mkdocs_pages.py</span></code> の作成し、常駐させておきます。<br />
+<code class="codehilite"><span class="err">tech_memo/docs</span></code>と同階層に、<code class="codehilite"><span class="err">create_mkdocs_pages.py</span></code> を作成し、常駐させておきます。<br />
 <a href="https://github.com/fereria/reincarnation_tech/blob/master/create_mkdocs_pages.py" target="_blank">あんどう氏の create_mkdocs_pages.py</a><br />
-を参考に、個人用にアレンジ作成させて頂きました。</li>
-</ul>
-<details class="example"><summary>個人用 create_mkdocs_pages.py</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+を参考に、個人用にアレンジ作成させて頂きました。</p>
+</li>
+</ol>
+<details class="example"><summary>create_mkdocs_pages.py（個人用）</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -2310,6 +2311,7 @@ Terminal or PowerShell  で、<br />
 <p>以下を実行<br />
 <code class="codehilite"><span class="err">python create_mkdocs_pages.py</span></code><br />
 すると、実行の都度、新規上書きで、 .pages ファイルが各々のファルダ内に出来る。</p>
+</details>
 <hr />
 <p>以上</p>
 <hr />
