@@ -2560,7 +2560,7 @@ sample_UI フォルダ<br />
 
 
 <span class="c1"># Widgetを配置するためのWindow</span>
-<span class="k">class</span> <span class="nc">GUI</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QDialog</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">GUI</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QMainWindow</span><span class="p">):</span>
     <span class="c1"># parent UI</span>
     <span class="n">ptr</span> <span class="o">=</span> <span class="n">OpenMayaUI</span><span class="o">.</span><span class="n">MQtUtil</span><span class="o">.</span><span class="n">mainWindow</span><span class="p">()</span>
     <span class="n">parent</span> <span class="o">=</span> <span class="n">shiboken</span><span class="o">.</span><span class="n">wrapInstance</span><span class="p">(</span><span class="n">long</span><span class="p">(</span><span class="n">ptr</span><span class="p">),</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QWidget</span><span class="p">)</span>
@@ -2573,10 +2573,10 @@ sample_UI フォルダ<br />
         <span class="nb">super</span><span class="p">(</span><span class="n">GUI</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">ui</span> <span class="o">=</span> <span class="n">QUiLoader</span><span class="p">()</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CURRENT_PATH</span><span class="p">,</span> <span class="s1">&#39;QtDesignerUI.ui&#39;</span><span class="p">))</span>
-
-        <span class="n">layout</span> <span class="o">=</span> <span class="n">QtWidgets</span><span class="o">.</span><span class="n">QVBoxLayout</span><span class="p">()</span>
-        <span class="n">layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">layout</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setCentralWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="p">)</span>
+        <span class="c1"># layout = QtWidgets.QVBoxLayout()</span>
+        <span class="c1"># layout.addWidget(self.ui)</span>
+        <span class="c1"># self.setLayout(layout)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">titleName</span><span class="p">)</span>
 
