@@ -1427,16 +1427,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    コーディングの違いによる場合分け
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#1-xxxui" class="md-nav__link">
     ■① XXX.ui ファイルを使用した 場合
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#2-xxxui-xxx_pyside2py" class="md-nav__link">
-    ■② XXX.ui ファイルをコンバートした XXX_pyside2.py ファイルを使用した 場合
+    ■② XXX.ui ファイルをコンバートした、 XXX_pyside2.py ファイルを使用した 場合
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2094,16 +2107,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    コーディングの違いによる場合分け
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#1-xxxui" class="md-nav__link">
     ■① XXX.ui ファイルを使用した 場合
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#2-xxxui-xxx_pyside2py" class="md-nav__link">
-    ■② XXX.ui ファイルをコンバートした XXX_pyside2.py ファイルを使用した 場合
+    ■② XXX.ui ファイルをコンバートした、 XXX_pyside2.py ファイルを使用した 場合
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2138,12 +2164,12 @@ QtDesigner で作成した xxx.ui ファイルを、pyside2へ<strong>コンバ�
 GUI 起動用の xxxx.py のコーディング</li>
 </ul>
 <p>には、記述に違いがある。<br />
-どちらの記述にも対応できるようになっておきたいです。</p>
+どちらの記述でも、mayaで開く対応ができるようになっておきたいです。</p>
 <p>例えば、<br />
 sample_UI フォルダ<br />
- ├ pyTemplate_forQtDesignerUiUse_boot.py --<strong>①</strong><br />
- ├ pyTemplate_forQtDesignerUiConvertedPyUse_boot.py --<strong>②</strong><br />
- ├ <span style="color: #8BC34A; "><strong>QtDesignerUI.ui</strong></span><br />
+ └ pyTemplate_forQtDesignerUiUse_boot.py --①<br />
+ └ pyTemplate_forQtDesignerUiConvertedPyUse_boot.py --②<br />
+ └ <span style="color: #8BC34A; "><strong>QtDesignerUI.ui</strong></span><br />
  └ <span style="color: #2196F3; "><strong>QtDesignerUI_pyside2.py</strong></span><br />
 という階層構造の場合を想定。</p>
 <p>以下、シンプルですが、<span style="color: #8BC34A; "><strong>QtDesignerUI.ui</strong></span> です。</p>
@@ -2392,7 +2418,22 @@ sample_UI フォルダ<br />
 </details>
 <p>以上を前提として、以下のように場合分け出来た。</p>
 <hr />
-<h2 id="1-xxxui"><strong>■① XXX.ui ファイルを使用した 場合</strong><a class="headerlink" href="#1-xxxui" title="Permanent link">&para;</a></h2>
+<h2 id="_1"><strong>コーディングの違いによる場合分け</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">概要</p>
+<ul>
+<li>.ui ファイルを、<br />
+ファイルとして読み込むか、</li>
+<li>.ui からコンバートした、pythonファイルを、<br />
+モジュールとして読み込むか</li>
+</ul>
+</div>
+<h3 id="1-xxxui"><strong>■① XXX.ui ファイルを使用した 場合</strong><a class="headerlink" href="#1-xxxui" title="Permanent link">&para;</a></h3>
+<ul>
+<li>相違箇所抜粋<br />
+<code class="codehilite"><span class="err">75  self.ui = QUiLoader().load(os.path.join(CURRENT_PATH, &#39;QtDesignerUI.ui&#39;))</span></code><br />
+<code class="codehilite"><span class="err">76  self.setCentralWidget(self.ui)</span></code></li>
+</ul>
 <details><summary>pyTemplate_forQtDesignerUiUse_boot.py</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>  1
   2
   3
@@ -2616,7 +2657,13 @@ sample_UI フォルダ<br />
 <span class="n">pyTemplate_forQtDesignerUiUse_boot</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table></p>
-<h2 id="2-xxxui-xxx_pyside2py"><strong>■② XXX.ui ファイルをコンバートした<br> XXX_pyside2.py ファイルを使用した 場合</strong><a class="headerlink" href="#2-xxxui-xxx_pyside2py" title="Permanent link">&para;</a></h2>
+<p><br></p>
+<h3 id="2-xxxui-xxx_pyside2py"><strong>■② XXX.ui ファイルをコンバートした、<br> XXX_pyside2.py ファイルを使用した 場合</strong><a class="headerlink" href="#2-xxxui-xxx_pyside2py" title="Permanent link">&para;</a></h3>
+<ul>
+<li>相違箇所抜粋<br />
+<code class="codehilite"><span class="err">64  self.ui = qtGUI.Ui_MainWindow()</span></code><br />
+<code class="codehilite"><span class="err">65  self.ui.setupUi(self)</span></code></li>
+</ul>
 <details><summary>pyTemplate_forQtDesignerUiConvertedPyUse_boot.py</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -2831,8 +2878,8 @@ sample_UI フォルダ<br />
         <i class="material-icons">arrow_upward </i>▲このページTopへ戻る▲<br />
     </a><br />
 </button><br />
-<!-- script.jsの読み込み --><br />
-<script src="scroll_button.js"></script></p>
+<!-- script.jsの読み込み --></p>
+<script src="scroll_button.js"></script>
                 
                   
                 
@@ -2842,7 +2889,7 @@ sample_UI フォルダ<br />
                   <div class="md-source-date">
                     <small>
                       
-                        最終更新日: 2020年10月2日
+                        最終更新日: 2020年10月5日
                       
                     </small>
                   </div>
