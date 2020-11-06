@@ -2230,9 +2230,26 @@
 </details>
 <hr />
 <h1 id="hdd12">外づけHDDへの①データバックアップ、②システムイメージバックアップ<a class="headerlink" href="#hdd12" title="Permanent link">&para;</a></h1>
+<p>バックアップには、2つの異なるバックアッププログラムがある<br />
+｢ファイル履歴｣と｢バックアップと復元｣である。</p>
+<details class="note"><summary>｢ファイル履歴｣とは、</summary><p>任意のファイルを複数のバージョンで自動的に差分バックアップしてくれるツールで、<br />
+まさに過去にさかのぼって、修正または削除される前のファイルを復元できます。</p>
+</details>
+<details class="note"><summary>｢バックアップと復元｣とは、</summary><p>ファイルの最新バージョン1点だけを定期的にバックアップ保存します。<br />
+バックアップと復元はさらに、｢システムイメージ｣も作成します。<br />
+システムイメージとは、オペレーティングシステムからプログラム、ドキュメントまで、<br />
+コンピューターのシステムを丸ごと写真に撮ったようなものです。<br />
+システムイメージがあれば、コンピューターが恐ろしい事態に陥っても、システム全体の復元が容易になります。</p>
+</details>
+<p>以下、個人的に理解を容易にするために、<br />
+①データバックアップ<br />
+②システムイメージバックアップ<br />
+という区分けで、記録した。</p>
 <h2 id="1">①データバックアップ<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<details class="note"><summary>スケジュール編</summary><h3 id="desktop-n46e8em">●スケジュールバックアップ(<strong>DESKTOP-N46E8EM</strong>)方法<a class="headerlink" href="#desktop-n46e8em" title="Permanent link">&para;</a></h3>
-<p>ここでは、windows10 標準のスケジュールを使用する方法です。</p>
+<p>データバックアップには、<br />
+スケジュールによるスケジュール編（自動化）と、手動による手動編とに分けた。</p>
+<h3 id="desktop-n46e8em">●スケジュールバックアップ(<strong>DESKTOP-N46E8EM</strong>)方法<a class="headerlink" href="#desktop-n46e8em" title="Permanent link">&para;</a></h3>
+<details class="note"><summary>スケジュール編</summary><p>ここでは、windows10 標準のスケジュールを使用する方法です。</p>
 <h4 id="desktop-n46e8em_1">■DESKTOP-N46E8EM　の内容　の削除方法<a class="headerlink" href="#desktop-n46e8em_1" title="Permanent link">&para;</a></h4>
 <p><code class="codehilite"><span class="err">コントロール パネル/システムとセキュリティ/バックアップと復元 (Windows 7)</span></code><br />
 へアクセス</p>
@@ -2287,22 +2304,23 @@ DESKTOP-N46E8EM　ファイル(フォルダ)が出来ています！！</li>
 </ol>
 </details>
 <h3 id="windows10_backup">●手動によるバックアップ(<strong>windows10_backup</strong>)方法<a class="headerlink" href="#windows10_backup" title="Permanent link">&para;</a></h3>
-<ol>
+<details class="note"><summary>手動編</summary><ol>
 <li>
 <p>最低でも、以下<br />
-command<br />
-Desktop<br />
-Documents<br />
-Downloads<br />
-Favorites<br />
-program<br />
-Videos<br />
-work<br />
-画像</p>
+    command<br />
+    Desktop<br />
+    Documents<br />
+    Downloads<br />
+    Favorites<br />
+    program<br />
+    Videos<br />
+    work<br />
+    画像</p>
 <p>以上8フォルダ<br />
 を任意でコピペして　手動で、<strong>windows10_backup</strong>　フォルダへバックアップ。</p>
 </li>
 </ol>
+</details>
 <h2 id="2">②システムイメージバックアップ<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p>ここでは、windows10 標準のシステムイメージを作成する方法です。</p>
 <p><code class="codehilite"><span class="err">コントロール パネル/システムとセキュリティ/バックアップと復元 (Windows 7)</span></code><br />
@@ -2350,7 +2368,7 @@ boot camp アシスタント で復旧をこころみる</p>
                   <div class="md-source-date">
                     <small>
                       
-                        最終更新日: 2020年10月5日
+                        最終更新日: 2020年11月6日
                       
                     </small>
                   </div>
