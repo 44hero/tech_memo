@@ -1,3 +1,6 @@
+// GitBook でもそうですが、全部のタブをチクチク開いて探していかないといけないのは
+// けっこうな苦行なので
+// デフォルトで全部オープンしておくようにしました。
 document.addEventListener("DOMContentLoaded", function () {
     var nav = document.getElementsByClassName("md-nav");
     for (var i = 0; i < nav.length; i++) {
