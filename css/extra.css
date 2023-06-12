@@ -5,6 +5,7 @@
   border-bottom: solid 2px #226847;
   padding-bottom: 5px;
 }
+
 .md-typeset h2 {
   border-bottom: 1px dotted #888;
 }
@@ -13,6 +14,42 @@ div.entry-content h2:before {
   font-family: FontAwesome;
   content: "\f14a\00a0";
   color: #ff7f7f;
+}
+
+/* > で .md-typeset クラスの直接の子要素の ::before 疑似要素にのみ作用させている */
+.md-typeset > ::before {
+    font-family: "FontAwesome";
+    margin-right: .3em;
+    display: inline-block !important;
+}
+
+/* h1 に fa-book icon */
+.md-typeset h1::before {
+    content: "\f02d " !important;
+}
+
+/* h2 に fa-arrow-circle-right icon */
+.md-typeset h2::before {
+    content: "\f0a9" !important;
+}
+
+.md-typeset h3 {
+  font-weight: 500;
+  position: relative;
+  padding-left: 1.3em;
+  line-height: 1.4;
+}
+
+.md-typeset h3:before {
+  /* font-family: "FontAwesome"; */
+  content: "\f058" !important;
+  /* font-weight: 900; */
+  /* position: absolute; */
+  /* font-size: 1em; */
+  /* left: 0; */
+  /* top: 0; */
+  /* color: rgba(0, 61, 153, 0.776); */
+  /* font-weight: 900; */
 }
 
 label.md-nav__link {
