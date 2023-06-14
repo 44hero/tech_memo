@@ -1781,6 +1781,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    ■補足
+  </a>
+  
+</li>
+      
       
       
       
@@ -1807,10 +1814,82 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-8" type="checkbox" id="nav-6-8">
     
     <label class="md-nav__link" for="nav-6-8">
-      理解不足箇所
+      私のバージョンリスト一覧
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-8">
+        私のバージョンリスト一覧
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../97_私のバージョンリスト一覧/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-9" type="checkbox" id="nav-6-9">
+    
+    <label class="md-nav__link" for="nav-6-9">
+      各ダウンロードリンク先
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-9">
+        各ダウンロードリンク先
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../98_各ダウンロードリンク先/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-10" type="checkbox" id="nav-6-10">
+    
+    <label class="md-nav__link" for="nav-6-10">
+      理解不足箇所
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-10">
         理解不足箇所
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2354,6 +2433,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    ■補足
+  </a>
+  
+</li>
+      
       
       
       
@@ -2374,7 +2460,7 @@
                 <h1 id="venv">venvを使用したテスト環境<a class="headerlink" href="#venv" title="Permanent link">&para;</a></h1>
 <p>pyhton3系の<code class="codehilite"><span class="err">venv</span></code>（Pythonの仮想環境）を使用することで、<br />
 例えば、現状の環境構築を汚すことなく、plug-ins や拡張機能等のバージョンアップをテストして、<br />
-不具合等を予め、確認出来る、という機能があります。 </p>
+不具合等を予め確認出来る、という機能があります。 </p>
 <div class="admonition example">
 <p class="admonition-title">例</p>
 <p>mkdocs material のVersion: 4.6.3を使用<br />
@@ -2413,11 +2499,11 @@ MkDocs Materialの公式サポートやコミュニティフォーラムなど�
 ことについて述べます。</p>
 <p><code class="codehilite"><span class="err">venv</span></code>（Pythonの仮想環境）を使用して開発環境やテスト環境で<br />
 新しいバージョンのMkDocs Materialを試すことができます。<br />
-以下に手順ぼ例を述べます。</p>
-<p>結果を先に報告すると、</p>
+以下に手順の例を述べます。</p>
+<p>結果を先に述べると、</p>
 <div class="admonition note">
 <p class="admonition-title">結果</p>
-<p>結果を先に報告すると、<br />
+<p>結果を先に述べると、<br />
 バージョンアップしてみると、レイアウトや仕様が大きく崩れました。<br />
 よって、テスト環境構築でのテスト実行での不具合を確認できたため、<br />
 mkdocs material のVersion: 5.5.14<br />
@@ -2439,22 +2525,35 @@ mkdocs material のVersion: 5.5.14<br />
 <ol>
 <li>仮想環境をアクティブにします。以下のコマンドを実行（Windowsの場合）<br />
 <code class="codehilite"><span class="err">myenv\Scripts\activate</span></code><br />
-仮想環境がアクティブになったら、MkDocsをインストール出来る準備が整います。<br />
+仮想環境がアクティブになったら、図のように、<br />
+<code class="codehilite"><span class="err">(myenv) C:\Users\███\work</span></code><br />
+と、表示が変化します。<br />
+カレントが<code class="codehilite"><span class="err">myenv</span></code>環境下に居ることを表しています。<br />
 クリックで拡大<br />
-<a href="img/venvを使用したテスト環境_A0102.png" data-lightbox="example-1"><img src="img/venvを使用したテスト環境_A0102.png"  width="300"></a></li>
-<li>仮想環境がアクティブになったら、MkDocsをインストールします。以下のコマンドを実行します<br />
+<a href="img/venvを使用したテスト環境_A0102.png" data-lightbox="example-1"><img src="img/venvを使用したテスト環境_A0102.png"  width="300"></a><br />
+MkDocsをインストール出来る準備が整いました。</li>
+<li>仮想環境がアクティブなので、MkDocsをインストール出来ます。以下のコマンドを実行します。<br />
 <code class="codehilite"><span class="err">pip install mkdocs-material==5.5.14</span></code><br />
 参考：<a href="https://chat.openai.com/share/72fa7084-4492-4464-a4b5-1b55b336a81d">venvの使い方をChatGPTに聞いてみた！！</a><br />
 これにより、MkDocs Materialのバージョン5.5.14がインストールされます</li>
 </ol>
 <h2 id="_3">■環境内でテスト実行<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ol>
-<li>あとは、実際の実行したい<code class="codehilite"><span class="err">mkdocs.yml</span></code>ファイルがある階層までたどり、<br />
+<li>
+<p>あとは、実際の実行したい<code class="codehilite"><span class="err">mkdocs.yml</span></code>ファイルがある階層までたどり、<br />
 <code class="codehilite"><span class="err">cd C:\Users\███\work\mkdocs\tech_memo\docs</span></code><br />
 クリックで拡大<br />
 <a href="img/venvを使用したテスト環境_A0103.png" data-lightbox="example-1"><img src="img/venvを使用したテスト環境_A0103.png"  width="300"></a><br />
 いつもどおり、<code class="codehilite"><span class="err">mkdocs.yml</span></code>の実行<br />
-<code class="codehilite"><span class="err">mkdocsa serve</span></code></li>
+<code class="codehilite"><span class="err">mkdocsa serve</span></code><br />
+等を行い、編集作業を、仮想環境 <code class="codehilite"><span class="err">myenv</span></code> 内で進行してゆきます。<br />
+e.g.): <a href="../01_環境構築とオペレーション/#_7"><strong>再度 mkdocs gh-deploy 操作 等</strong></a>ページへ移動</p>
+<div class="admonition info">
+<p class="admonition-title">ポイント！！</p>
+<p>仮想環境 <code class="codehilite"><span class="err">myenv</span></code> 内であること！！<br />
+<code class="codehilite"><span class="err">(myenv) C:\Users\███\work</span></code></p>
+</div>
+</li>
 </ol>
 <h2 id="_4">■環境内テスト実行終了のため、環境を抜ける<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ol>
@@ -2463,6 +2562,10 @@ mkdocs material のVersion: 5.5.14<br />
 クリックで拡大<br />
 <a href="img/venvを使用したテスト環境_A0104.png" data-lightbox="example-1"><img src="img/venvを使用したテスト環境_A0104.png"  width="300"></a></li>
 </ol>
+<h2 id="_5">■補足<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>Terminal or PowerShell 操作チート ページの　応用編も参照してください。<br />
+用途説明しています。<br />
+<a href="../../70_PC操作関連/02_Terminal or PowerShell 操作チート/#_2"><strong>Terminal or PowerShell 操作 応用</strong></a>ページへ移動</p>
 <hr />
 <p>以上</p>
 <hr />
@@ -2490,7 +2593,7 @@ mkdocs material のVersion: 5.5.14<br />
                   <div class="md-source-date">
                     <small>
                       
-                        最終更新日: 2023年6月12日 10:32:46
+                        最終更新日: 2023年6月14日 04:55:50
                       
                     </small>
                   </div>
@@ -2527,7 +2630,7 @@ mkdocs material のVersion: 5.5.14<br />
           </a>
         
         
-          <a href="../99_理解不足箇所/" title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../97_私のバージョンリスト一覧/" title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
