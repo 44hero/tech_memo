@@ -13,7 +13,7 @@
         <meta name="description" content="テクニカル系 記憶の補足と思考の速度向上を目的としたサイト">
       
       
-        <link rel="canonical" href="https://44hero.github.io/tech_memo/20_Python/import re/">
+        <link rel="canonical" href="https://44hero.github.io/tech_memo/20_Python/10_reについて/12_re についてあれこれ独自でまとめたんダ/">
       
       
         <meta name="author" content="44hero">
@@ -37,7 +37,7 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
     
     
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.adb8469c.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.adb8469c.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.86422ebf.js"></script>
+      <script src="../../../assets/javascripts/modernizr.86422ebf.js"></script>
     
     
       
@@ -66,24 +66,24 @@
         <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
     
     
       <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
     
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600,800">
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
-      <link rel="stylesheet" href="../../css/stylesheet.css">
+      <link rel="stylesheet" href="../../../css/stylesheet.css">
     
       <link rel="stylesheet" href="https://example.com/material-icons.woff">
     
-      <link rel="stylesheet" href="../../css/icon.css">
+      <link rel="stylesheet" href="../../../css/icon.css">
     
-      <link rel="stylesheet" href="../../css/scroll_button.css">
+      <link rel="stylesheet" href="../../../css/scroll_button.css">
     
-      <link rel="stylesheet" href="../../css/lightbox.css">
+      <link rel="stylesheet" href="../../../css/lightbox.css">
     
     
       
@@ -207,7 +207,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         Home
       </a>
     
@@ -219,7 +219,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../10_MAYA/" class="md-tabs__link">
+        <a href="../../../10_MAYA/" class="md-tabs__link">
           MAYA
         </a>
       
@@ -232,7 +232,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../11_Maya_Tool/" class="md-tabs__link">
+        <a href="../../../11_Maya_Tool/" class="md-tabs__link">
           Maya_Tool
         </a>
       
@@ -245,7 +245,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" class="md-tabs__link md-tabs__link--active">
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
           Python
         </a>
       
@@ -258,7 +258,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../21_Pyside2/" class="md-tabs__link">
+        <a href="../../../21_Pyside2/" class="md-tabs__link">
           Pyside2
         </a>
       
@@ -271,7 +271,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../60_Mkdocs & Github/" class="md-tabs__link">
+        <a href="../../../60_Mkdocs & Github/" class="md-tabs__link">
           Mkdocs & Github
         </a>
       
@@ -284,7 +284,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../70_PC操作関連/" class="md-tabs__link">
+        <a href="../../../70_PC操作関連/" class="md-tabs__link">
           PC操作関連
         </a>
       
@@ -297,7 +297,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../97_その他/" class="md-tabs__link">
+        <a href="../../../97_その他/" class="md-tabs__link">
           その他
         </a>
       
@@ -310,7 +310,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../97_外部ｻｲﾄLink/" class="md-tabs__link">
+        <a href="../../../97_外部ｻｲﾄLink/" class="md-tabs__link">
           外部ｻｲﾄLink
         </a>
       
@@ -323,7 +323,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../98_ﾌﾟﾗｲﾍﾞｰﾄLink/" class="md-tabs__link">
+        <a href="../../../98_ﾌﾟﾗｲﾍﾞｰﾄLink/" class="md-tabs__link">
           ﾌﾟﾗｲﾍﾞｰﾄLink
         </a>
       
@@ -336,7 +336,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../99_ご意見等はｺﾁﾗから/" class="md-tabs__link">
+        <a href="../../../99_ご意見等はｺﾁﾗから/" class="md-tabs__link">
           ご意見等はｺﾁﾗから
         </a>
       
@@ -373,7 +373,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Home" class="md-nav__link">
+    <a href="../../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -404,7 +404,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -435,7 +435,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/IKを使用した、bend成分のみの抽出方法 のアイデアに一役/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/IKを使用した、bend成分のみの抽出方法 のアイデアに一役/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -490,7 +490,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/Mayaの機能＜モジュール＞設定/1. 質問1/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/Mayaの機能＜モジュール＞設定/1. 質問1/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -526,7 +526,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/Mayaの機能＜モジュール＞設定/2. 質問2/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/Mayaの機能＜モジュール＞設定/2. 質問2/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -562,7 +562,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/Mayaの機能＜モジュール＞設定/回答・結果/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/Mayaの機能＜モジュール＞設定/回答・結果/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -603,7 +603,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/Mayaセキュリティツール/" title="Maya Security Tools プラグイン の発行" class="md-nav__link">
+    <a href="../../../10_MAYA/Mayaセキュリティツール/" title="Maya Security Tools プラグイン の発行" class="md-nav__link">
       Maya Security Tools プラグイン の発行
     </a>
   </li>
@@ -639,7 +639,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/poleVectorの計算方法/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/poleVectorの計算方法/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -675,7 +675,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/twist成分をmatrixを利用して出力/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/twist成分をmatrixを利用して出力/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -711,7 +711,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/utilityNodeを使用した, めり込み回避するスカートrig/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/utilityNodeを使用した, めり込み回避するスカートrig/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -742,7 +742,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/utilityNodeを使用した, めり込み回避するスカートrig/0. 実現用コード/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/utilityNodeを使用した, めり込み回避するスカートrig/0. 実現用コード/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -778,7 +778,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/utilityNodeを使用した, めり込み回避するスカートrig/1. 質問/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/utilityNodeを使用した, めり込み回避するスカートrig/1. 質問/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -814,7 +814,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_MAYA/utilityNodeを使用した, めり込み回避するスカートrig/回答・結果/" title="Index" class="md-nav__link">
+    <a href="../../../10_MAYA/utilityNodeを使用した, めり込み回避するスカートrig/回答・結果/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -860,7 +860,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11_Maya_Tool/" title="Index" class="md-nav__link">
+    <a href="../../../11_Maya_Tool/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -891,7 +891,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11_Maya_Tool/12_Chacoal Editor2/" title="Index" class="md-nav__link">
+    <a href="../../../11_Maya_Tool/12_Chacoal Editor2/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -922,7 +922,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11_Maya_Tool/12_Chacoal Editor2/Request/" title="Index" class="md-nav__link">
+    <a href="../../../11_Maya_Tool/12_Chacoal Editor2/Request/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -953,7 +953,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11_Maya_Tool/12_Chacoal Editor2/Request/english/" title="Index" class="md-nav__link">
+    <a href="../../../11_Maya_Tool/12_Chacoal Editor2/Request/english/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -989,7 +989,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11_Maya_Tool/12_Chacoal Editor2/Request/japanese/" title="Index" class="md-nav__link">
+    <a href="../../../11_Maya_Tool/12_Chacoal Editor2/Request/japanese/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1035,7 +1035,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11_Maya_Tool/13_ARTv1/" title="Index" class="md-nav__link">
+    <a href="../../../11_Maya_Tool/13_ARTv1/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1071,7 +1071,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../11_Maya_Tool/19_My_tool 置き場/" title="Index" class="md-nav__link">
+    <a href="../../../11_Maya_Tool/19_My_tool 置き場/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1114,7 +1114,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Index" class="md-nav__link">
+    <a href="../../" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1132,11 +1132,68 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     
     <label class="md-nav__link" for="nav-4-2">
-      import re
+      reについて
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-2">
+        reについて
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2-1" type="checkbox" id="nav-4-2-1">
+    
+    <label class="md-nav__link" for="nav-4-2-1">
+      import re
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-2-1">
         import re
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11_import re/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2-2" type="checkbox" id="nav-4-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-4-2-2">
+      re についてあれこれ独自でまとめたんダ
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-2-2">
+        re についてあれこれ独自でまとめたんダ
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1165,6 +1222,11 @@
   </li>
 
         
+      </ul>
+    </nav>
+  </li>
+
+        
           
           
           
@@ -1175,10 +1237,29 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      maya cmds UI の兼ねてからの疑問-解消-
+      UIについて
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        UIについて
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3-1" type="checkbox" id="nav-4-3-1">
+    
+    <label class="md-nav__link" for="nav-4-3-1">
+      maya cmds UI の兼ねてからの疑問-解消-
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-1">
         maya cmds UI の兼ねてからの疑問-解消-
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1190,9 +1271,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../maya cmds UI の兼ねてからの疑問-解消-/" title="Index" class="md-nav__link">
+    <a href="../../20_UIについて/21_maya cmds UI の兼ねてからの疑問-解消-/" title="Index" class="md-nav__link">
       Index
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1211,11 +1297,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
     
     <label class="md-nav__link" for="nav-4-4">
-      re についてあれこれ独自でまとめたんダ
+      クラス図について
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-4">
-        re についてあれこれ独自でまとめたんダ
+        クラス図について
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1226,8 +1312,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../re についてあれこれ独自でまとめたんダ/" title="Index" class="md-nav__link">
-      Index
+    <a href="../../90_クラス図について/" title="クラス図の作成まで" class="md-nav__link">
+      クラス図の作成まで
     </a>
   </li>
 
@@ -1267,7 +1353,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../21_Pyside2/" title="Index" class="md-nav__link">
+    <a href="../../../21_Pyside2/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1298,7 +1384,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../21_Pyside2/01_single UI and parent UI/" title="Index" class="md-nav__link">
+    <a href="../../../21_Pyside2/01_single UI and parent UI/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1329,7 +1415,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../21_Pyside2/01_single UI and parent UI/01_parent UI/" title="Index" class="md-nav__link">
+    <a href="../../../21_Pyside2/01_single UI and parent UI/01_parent UI/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1365,7 +1451,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../21_Pyside2/01_single UI and parent UI/02_single UI/" title="Index" class="md-nav__link">
+    <a href="../../../21_Pyside2/01_single UI and parent UI/02_single UI/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1401,7 +1487,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../21_Pyside2/01_single UI and parent UI/10_過去記事/" title="Index" class="md-nav__link">
+    <a href="../../../21_Pyside2/01_single UI and parent UI/10_過去記事/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1432,7 +1518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../21_Pyside2/01_single UI and parent UI/10_過去記事/質問.重複ウィンドウの回避/" title="Index" class="md-nav__link">
+    <a href="../../../21_Pyside2/01_single UI and parent UI/10_過去記事/質問.重複ウィンドウの回避/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1478,7 +1564,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../21_Pyside2/02_ui_file と converted_ui2py_file の使い分け/" title="Index" class="md-nav__link">
+    <a href="../../../21_Pyside2/02_ui_file と converted_ui2py_file の使い分け/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1519,7 +1605,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1550,7 +1636,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/01_環境構築とオペレーション/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/01_環境構築とオペレーション/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1586,7 +1672,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/02_Mkdocs用_拡張機能 メモ/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/02_Mkdocs用_拡張機能 メモ/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1622,7 +1708,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/03_関連コマンドチートシート/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/03_関連コマンドチートシート/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1658,7 +1744,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/04_Mkdocs用コマンド実行時のエラー対処/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/04_Mkdocs用コマンド実行時のエラー対処/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1694,7 +1780,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/05_Mkdocs用拡張機能Pagesの追加操作/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/05_Mkdocs用拡張機能Pagesの追加操作/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1730,7 +1816,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/06_venvを使用したテスト環境/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/06_venvを使用したテスト環境/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1766,7 +1852,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/97_私のバージョンリスト一覧/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/97_私のバージョンリスト一覧/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1802,7 +1888,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/98_各ダウンロードリンク先/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/98_各ダウンロードリンク先/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1838,7 +1924,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../60_Mkdocs & Github/99_理解不足箇所/" title="Index" class="md-nav__link">
+    <a href="../../../60_Mkdocs & Github/99_理解不足箇所/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1879,7 +1965,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../70_PC操作関連/" title="Index" class="md-nav__link">
+    <a href="../../../70_PC操作関連/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1910,7 +1996,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../70_PC操作関連/01_maya2018が立ち上がらず。。/" title="Index" class="md-nav__link">
+    <a href="../../../70_PC操作関連/01_maya2018が立ち上がらず。。/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1946,7 +2032,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../70_PC操作関連/02_Terminal or PowerShell 操作チート/" title="Index" class="md-nav__link">
+    <a href="../../../70_PC操作関連/02_Terminal or PowerShell 操作チート/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -1982,7 +2068,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../70_PC操作関連/03_バックアップについて/" title="Index" class="md-nav__link">
+    <a href="../../../70_PC操作関連/03_バックアップについて/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2023,7 +2109,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../97_その他/" title="Index" class="md-nav__link">
+    <a href="../../../97_その他/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2054,7 +2140,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../97_その他/29_PyCharm/" title="Index" class="md-nav__link">
+    <a href="../../../97_その他/29_PyCharm/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2085,7 +2171,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../97_その他/29_PyCharm/01_MayaとPyCharmの連携/" title="Index" class="md-nav__link">
+    <a href="../../../97_その他/29_PyCharm/01_MayaとPyCharmの連携/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2121,7 +2207,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../97_その他/29_PyCharm/02_上位バージョンMayaと既存PyCharm設定の更新方法/" title="Index" class="md-nav__link">
+    <a href="../../../97_その他/29_PyCharm/02_上位バージョンMayaと既存PyCharm設定の更新方法/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2162,7 +2248,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../97_その他/30_QtDesingner/" title="Index" class="md-nav__link">
+    <a href="../../../97_その他/30_QtDesingner/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2198,7 +2284,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../97_その他/50_CODE_snippets/" title="Index" class="md-nav__link">
+    <a href="../../../97_その他/50_CODE_snippets/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2239,7 +2325,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../97_外部ｻｲﾄLink/" title="Index" class="md-nav__link">
+    <a href="../../../97_外部ｻｲﾄLink/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2275,7 +2361,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../98_ﾌﾟﾗｲﾍﾞｰﾄLink/" title="Index" class="md-nav__link">
+    <a href="../../../98_ﾌﾟﾗｲﾍﾞｰﾄLink/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2311,7 +2397,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99_ご意見等はｺﾁﾗから/" title="Index" class="md-nav__link">
+    <a href="../../../99_ご意見等はｺﾁﾗから/" title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -2337,13 +2423,10 @@
                 
                   <h1>Index</h1>
                 
-                <p>import re</p>
-<p>実務能率化のため、一から自前のリネームツールを作成すること1月半。<br />
-前職場のリネームツールをまねてやってみたら、いろんな学びがありました。<br />
-その一つが、パターンを取得する、正規表現re モジュール(import re)でした。<br />
-その時活躍したのが、以下、パターン作成支援サイト。<br />
-チートシートって言われるものだそうです。<br />
-<a href="https://www.debuggex.com/#cheatsheet">https://www.debuggex.com/#cheatsheet</a></p>
+                <p>re についてあれこれ独自でまとめたんダ</p>
+<p><a href="https://docs.google.com/spreadsheets/d/13lRLbGWV8obZ_HXxy4y_I4ciNV3SBUPEPX8cFDeL9V4/edit#gid=0" target="_blank">個人GoogleDrive</a><br />
+<br />
+閲覧はご自由に^^</p>
                 
                   
                 
@@ -2353,7 +2436,7 @@
                   <div class="md-source-date">
                     <small>
                       
-                        最終更新日: 2023年6月14日 04:55:47
+                        最終更新日: 2023年6月15日 06:31:50
                       
                     </small>
                   </div>
@@ -2375,7 +2458,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../" title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../11_import re/" title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2390,7 +2473,7 @@
           </a>
         
         
-          <a href="../maya cmds UI の兼ねてからの疑問-解消-/" title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../20_UIについて/21_maya cmds UI の兼ねてからの疑問-解消-/" title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
@@ -2423,7 +2506,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
     
       <a href="None" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
     
@@ -2437,36 +2520,36 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.c33a9706.js"></script>
+      <script src="../../../assets/javascripts/application.c33a9706.js"></script>
       
         
         
           
-          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
           
             
           
             
               
-                <script src="../../assets/javascripts/lunr/tinyseg.js"></script>
+                <script src="../../../assets/javascripts/lunr/tinyseg.js"></script>
               
               
-                <script src="../../assets/javascripts/lunr/lunr.ja.js"></script>
+                <script src="../../../assets/javascripts/lunr/lunr.ja.js"></script>
               
             
           
           
-            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
+            <script src="../../../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
         <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
-        <script src="../../javascripts/scroll_button.js"></script>
+        <script src="../../../javascripts/scroll_button.js"></script>
       
-        <script src="../../javascripts/lightbox.js"></script>
+        <script src="../../../javascripts/lightbox.js"></script>
       
     
   </body>
