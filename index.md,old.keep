@@ -1,0 +1,142 @@
+﻿<!-- アクセス解析 計測タグ HTML　の貼り付け。 参照サイト　is here. https://wa.userlocal.jp/ua/admin/home/settings/tag -->
+<script type="text/javascript">
+    (function(a,b,c,d,e,f,g){
+    e='//d.nakanohito.jp/ua/uwa.js';
+    a['UlGlobalObject']=d;a[d]=a[d]||function(){(a[d].q=a[d].q||[]).push(arguments)};
+    a[d].l=1*new Date();
+    f=b.createElement(c),g=b.getElementsByTagName(c)[0];
+    f.async=1;f.src=e;g.parentNode.insertBefore(f,g)
+    })(window,document,'script','_uao');
+
+    _uao('init', '20131904', {oem_id: 1,fpf: true});
+    _uao('set', 'lg_id', '');
+    _uao('send', 'pv');
+</script>
+
+<!-- #top とすると、　本サイトのヘッダーが top でなく Home になってしまうのを防ぐ目的で、 # top としています。　-->
+#当サイトについて...
+
+## **概要**
+技術的なメモの置き場です。
+私の記憶を補助します。
+<!-- !!! summary
+	技術的なメモの置き場です。
+	私の記憶を補助します。 -->
+    
+
+## **site map**
+当記事全体構成の簡易早見表です。
+
+!!! Warning
+    <i class="material-icons cyan">check_circle_outline</i>　　<!-- "css/icon.css" にルール記述あり　-->
+	表記について
+    
+    私個人が、オフィシャルとし発表した記事となります。
+    この表記以外は、基本的に未だオフィシャルとして発表するつもりでない記事となります。
+	
+[**MAYA**](10_MAYA)
+&emsp;&emsp;└ [**Maya_Tool**](11_Maya_Tool)<i class="material-icons cyan">check_circle_outline</i>
+
+[**Python**](20_Python)
+
+[**Pyside2**](21_Pyside2)
+
+[**Mkdocs & Github**](60_Mkdocs & Github)
+
+[**PC操作関連**](70_PC操作関連)
+
+[**その他**](97_その他)
+&emsp;&emsp;└ [**PyCharm**](97_その他\29_PyCharm)<i class="material-icons cyan">check_circle_outline</i>
+&emsp;&emsp;└ [**QtDesingner**](97_その他\30_QtDesingner)<i class="material-icons cyan">check_circle_outline</i>
+&emsp;&emsp;└ [**CODE_snippets**](97_その他\50_CODE_snippets)<i class="material-icons cyan">check_circle_outline</i>
+
+[**外部ｻｲﾄLink**](97_外部ｻｲﾄLink)
+
+[**ﾌﾟﾗｲﾍﾞｰﾄLink**](98_ﾌﾟﾗｲﾍﾞｰﾄLink)
+
+[**ご意見等はｺﾁﾗから**](99_ご意見等はｺﾁﾗから)
+<br>
+<br>
+
+## **記憶のトビラ**
+個人的な忘備禄です
+
+●最後のまとめ、大事なんですね。。面白いけど、難しい・・
+<http://www.jp.square-enix.com/tech/library/pdf/RigAndTools_ScaleRig.pdf>{:target="_blank"}
+●pep8-ja
+<https://pep8-ja.readthedocs.io/ja/latest/>{:target="_blank"}
+●いのぽあ さん の為になるサイト
+<https://inopoa.com>{:target="_blank"}
+●maya userSetupスクリプト実行のタイミング
+<http://melpystudio.blog82.fc2.com/blog-entry-57.html>{:target="_blank"}
+●PyCharm 設定の参考
+<https://akiyoko.hatenablog.jp/entry/2020/05/08/083928>{:target="_blank"}
+●PyCharm ショートカット　チート
+
+!!! ショートカットチート
+    * [ソースコードを操作する](https://pleiades.io/help/pycharm/working-with-source-code.html){:target="_blank"}
+    * [便利なショートカット集](https://akiyoko.hatenablog.jp/entry/2020/05/08/083928#:~:text=%E3%81%B0%20OK%20%E3%81%A7%E3%81%99%E3%80%82-,%E4%BE%BF%E5%88%A9%E3%81%AA%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E9%9B%86,-%E6%9C%80%E5%BE%8C%E3%81%AB%E9%9D%9E%E5%B8%B8){:target="_blank"}
+    * [メソッド間移動](https://gammasoft.jp/python/pycharm-keybord-shortcuts/){:target="_blank"}
+●コマンドとメソッドと関数の違い
+<https://wa3.i-3-i.info/word1906.html>{:target="_blank"}
+<https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10241355365>{:target="_blank"}
+●独自規格の命名規則
+
+??? 独自規格の命名規則とは
+    1. 第1単語 + 第2単語 + 第3単語 で基本的に構成
+    1. 命名には、多くても 2つの  _(アンダーバー) で必ず構成する
+        e.g.): lip_jtA_GpL
+        e.g.): lip_jtA
+        e.g.): lip_geo, lip_rigGeo
+    1. 第1単語, 第2単語は 必ず小文字で始まる、ローワーキャメルケース記述 を基本とする
+        e.g.): lip_jt
+        e.g.): lip_geo, lip_rigGeo, lip_jtA_GpL
+    1. 第3単語は 必ず大文字で始まる、アッパーキャメルケース記述 を基本とする
+        e.g.): lip_jtA_GpL, lip_jt_AL, lip_jtA_L
+    1. 識別子は、 必ず大文字で始まり、第3単語で使用する事 を基本とする
+        識別子とは、
+            -a. ナンバリング用識別子
+            -b. 文字列 Gp 識別子（グループの意
+            -c. サイド用識別子
+                を想定しています
+        e.g.): "A", "B", "L", "R", "Gp" ....
+    1. -a. ナンバリング用識別子 は 第1単語 第2単語 第3単語 どこで使用しても構わないが、2個以上 存在してはいけない
+        以下は NG です
+        NG. ): lip_jt@_@L, lip@_jt@_L
+●英語とIT用語のマメ知識
+
+!!! 英語のマメ知識
+    * [句読点ガイド](https://www.thepunctuationguide.com/){:target="_blank"}
+    * [オーバーライドとは](https://e-words.jp/w/%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%A9%E3%82%A4%E3%83%89.html){:target="_blank"}
+    * [英語の略語一覧](https://mysuki.jp/english-words-shorten-1982#page10){:target="_blank"}
+    
+    !!! 英語の略語で使用頻度の高いもの
+        * 例えば
+            e.g.
+        * なぜならば
+            b/c
+
+<br>
+--------
+
+
+--------------------------------------------------------------------------------
+以上
+
+--------------------------------------------------------------------------------
+<!-- このページのトップへ戻る ボタン挿入 html 箇所 -->
+<!-- sample site is here. https://qiita.com/yukibe/items/db21b0ca6bc5cd2e84fe -->
+<meta charset="utf-8">
+<title>scroll_button</title>
+<!-- stylesheet.cssの読み込み -->
+<link rel="stylesheet" type="text/css" href="scroll_button.css">
+<!-- jqueryの読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<button type=button class="back-to-top">
+	<a href="#">
+		<i class="material-icons">arrow_upward </i>▲このページTopへ戻る▲
+	</a>
+</button>
+<!-- script.jsの読み込み -->
+<script src="scroll_button.js"></script> 
